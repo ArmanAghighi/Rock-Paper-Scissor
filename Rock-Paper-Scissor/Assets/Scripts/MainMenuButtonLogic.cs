@@ -45,4 +45,10 @@ public class MainMenuButtonLogic : MonoBehaviour
     {
         OnPanelActivator?.Invoke(_optionPanel, true);
     }
+
+    public void ExitPanel()
+    {
+        OnPanelActivator?.Invoke(_optionPanel, false);
+        OnPanelActivator?.Invoke(_helpPanel, false);
+    }
 }
