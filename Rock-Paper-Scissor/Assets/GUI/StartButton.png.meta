@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 51175f63e07560f42b4cb56df0a6e4e7
+guid: 95bef79fe9d09994ebc3e5cd4d5a3f87
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -151,70 +151,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: 1 2 3_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 3
-        width: 100
-        height: 147
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5e4cb2324cf6d9f4b9798b1245435422
-      internalID: -305797082
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1 2 3_1
-      rect:
-        serializedVersion: 2
-        x: 108
-        y: 1
-        width: 110
-        height: 151
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 27927a3c59e56e94bb2b7131b6ac04a8
-      internalID: 1003482531
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1 2 3_2
-      rect:
-        serializedVersion: 2
-        x: 222
-        y: 0
-        width: 110
-        height: 152
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 56e2b3f54d993544eb3b8dd24e8414f5
-      internalID: 520529127
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -225,10 +162,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      1 2 3_0: -305797082
-      1 2 3_1: 1003482531
-      1 2 3_2: 520529127
+    nameFileIdTable: {}
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
