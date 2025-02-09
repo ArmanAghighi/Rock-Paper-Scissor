@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ee9f0971cf4f74469c6717a9d458c99, type: 3}
+  m_Name: Scissor
+  m_EditorClassIdentifier: 
+  hero_Name: Scissor
+  hero_Sprite: {fileID: -166409136, guid: 7a8ea98df65c5b448b3bd261635e6b74, type: 3}
+  hero_Catagory: 3
+  CanDefeatEnemyList: 02000000
+  CanBeDefeatedByEnemyList: 01000000

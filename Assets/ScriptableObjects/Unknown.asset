@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ee9f0971cf4f74469c6717a9d458c99, type: 3}
+  m_Name: Unknown
+  m_EditorClassIdentifier: 
+  hero_Name: Unknown
+  hero_Sprite: {fileID: 21300000, guid: 71f5ea546172aa74b8db485953d922fc, type: 3}
+  hero_Catagory: 0
+  CanDefeatEnemyList: 
+  CanBeDefeatedByEnemyList: 
