@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 
 public class GameManager : MonoBehaviour
@@ -21,4 +22,7 @@ public class GameManager : MonoBehaviour
             Destroy(Instance);
         }
     }
+
+    public void GeToGameScene() => SceneManager.LoadScene(1);
+    
 }

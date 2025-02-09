@@ -816,6 +816,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterImage: {fileID: 1305691000}
   characterNameText: {fileID: 642647024}
+  heroSlotButtons: []
   heroImageSlots:
   - {fileID: 1515805098}
   - {fileID: 942917297}
@@ -925,7 +926,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 252220525}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1258438955}
+        m_TargetAssemblyTypeName: MenuUIController, Assembly-CSharp
+        m_MethodName: AssignHeroToSlot
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &252220525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2309,7 +2322,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 679459796}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1258438955}
+        m_TargetAssemblyTypeName: MenuUIController, Assembly-CSharp
+        m_MethodName: AssignHeroToSlot
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &679459796
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2764,7 +2789,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 739491936}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1258438955}
+        m_TargetAssemblyTypeName: MenuUIController, Assembly-CSharp
+        m_MethodName: AssignHeroToSlot
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &739491936
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5323,9 +5360,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1119513614}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: OnPlayButtonSelection
+        m_MethodName: GeToGameScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
