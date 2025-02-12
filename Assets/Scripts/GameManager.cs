@@ -1,14 +1,16 @@
-using UnityEngine;
-using UnityEngine.SceneManagement;
+﻿using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    [HideInInspector] public static GameManager Instance;
+    public static GameManager Instance { get; private set; }
+
     private List<HeroScriptalbeObjects> lastTeam;
 
-    public List<HeroScriptalbeObjects> GetLastTeam () => lastTeam;
-    public void SetLastTeam(List<HeroScriptalbeObjects> LT) => lastTeam = LT;
+    public List<HeroScriptalbeObjects> GetLastTeam() => lastTeam;
+
+    public void SetLastTeam(List<HeroScriptalbeObjects> LastTeam) => lastTeam = LastTeam;
 
     private void Awake()
     {
@@ -19,10 +21,15 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            Destroy(Instance);
+            Destroy(gameObject);
         }
     }
 
     public void GeToGameScene() => SceneManager.LoadScene(1);
-    
+
+    public void GoToMainMenuScene() => SceneManager.LoadScene(0);
+
+    public void RestartGameScene() => SceneManager.LoadScene(1);
+
+    public void QuitGame() => Application.Quit();
 }
