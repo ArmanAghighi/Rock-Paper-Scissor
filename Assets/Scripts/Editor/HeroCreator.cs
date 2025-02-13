@@ -7,6 +7,7 @@ public class CharacterEditorWindow : EditorWindow
 {
     private string newCharacterName = "";
     private Sprite newCharacterSprite;
+    private Sprite newInGameCharacterSprite;
     private CharacterCategory newCharacterCategory = CharacterCategory.Unknown;
 
     private List<HeroScriptalbeObjects> allCharacters = new List<HeroScriptalbeObjects>();
@@ -59,6 +60,8 @@ public class CharacterEditorWindow : EditorWindow
         DrawCharacterTable();
     }
 
+    private Vector2 characterScrollPosition;
+
     private void DrawCharacterTable()
     {
         EditorGUILayout.BeginVertical("box");
@@ -70,6 +73,9 @@ public class CharacterEditorWindow : EditorWindow
             EditorGUILayout.EndVertical();
             return;
         }
+
+        // شروع اسکرول ویو با استفاده از characterScrollPosition
+        characterScrollPosition = GUILayout.BeginScrollView(characterScrollPosition, GUILayout.Height(500));
 
         foreach (var character in allCharacters)
         {
@@ -84,6 +90,7 @@ public class CharacterEditorWindow : EditorWindow
 
             EditorGUILayout.EndVertical();
         }
+        GUILayout.EndScrollView();
 
         if (GUILayout.Button("Save Battle Relations"))
         {
@@ -117,6 +124,7 @@ public class CharacterEditorWindow : EditorWindow
 
         newCharacterName = EditorGUILayout.TextField("Name", newCharacterName);
         newCharacterSprite = (Sprite)EditorGUILayout.ObjectField("Sprite", newCharacterSprite, typeof(Sprite), false);
+        newInGameCharacterSprite = (Sprite)EditorGUILayout.ObjectField("In Game Sprite", newInGameCharacterSprite, typeof(Sprite), false);
         newCharacterCategory = (CharacterCategory)EditorGUILayout.EnumPopup("Category", newCharacterCategory);
 
         if (GUILayout.Button("Save Character"))
@@ -127,7 +135,7 @@ public class CharacterEditorWindow : EditorWindow
 
     private void SaveCharacter()
     {
-        if (string.IsNullOrEmpty(newCharacterName) || newCharacterSprite == null || newCharacterCategory == CharacterCategory.Unknown)
+        if (string.IsNullOrEmpty(newCharacterName) || newCharacterSprite == null || newInGameCharacterSprite == null || newCharacterCategory == CharacterCategory.Unknown)
         {
             Debug.LogWarning("Fill all fields before saving.");
             return;
@@ -139,6 +147,7 @@ public class CharacterEditorWindow : EditorWindow
         HeroScriptalbeObjects newCharacter = ScriptableObject.CreateInstance<HeroScriptalbeObjects>();
         newCharacter.hero_Name = newCharacterName;
         newCharacter.hero_Sprite = newCharacterSprite;
+        newCharacter.inGameHero_Sprite = newInGameCharacterSprite;
         newCharacter.hero_Catagory = newCharacterCategory;
         newCharacter.CanDefeatEnemyList = new List<CharacterCategory>();
         newCharacter.CanBeDefeatedByEnemyList = new List<CharacterCategory>();

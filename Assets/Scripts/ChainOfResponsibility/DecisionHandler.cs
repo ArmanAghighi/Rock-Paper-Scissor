@@ -22,8 +22,8 @@ public class DecisionHandler : ChainOfResponsibility
     {
         Refree.Instance.DisallowPlayerToSelect();
         Refree.Instance.TriggerGameStart();
-        player.GetComponent<Image>().sprite = Player.player.GetSelectedHero().hero_Sprite;
-        opponent.GetComponent<Image>().sprite = Opponent.opponent.GetOpponentHero().hero_Sprite;
+        player.GetComponent<Image>().sprite = Player.player.GetSelectedHero().inGameHero_Sprite;
+        opponent.GetComponent<Image>().sprite = Opponent.opponent.GetOpponentHero().inGameHero_Sprite;
 
         animatorPlayer.SetTrigger(playerAnimatorString);
         animatorOpponent.SetTrigger(opponentAnimatorString);
