@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 
@@ -22,6 +23,20 @@ public class GameManager : MonoBehaviour
         else
         {
             Destroy(gameObject);
+        }
+
+        Screen.SetResolution(1080, 1920, true);
+
+        Canvas canvas = FindObjectOfType<Canvas>();
+        if (canvas != null)
+        {
+            CanvasScaler canvasScaler = canvas.GetComponent<CanvasScaler>();
+            if (canvasScaler != null)
+            {
+                float dpi = Screen.dpi;
+                float scaleFactor = dpi > 0 ? dpi / 160f : 1f;
+                canvasScaler.scaleFactor = scaleFactor;
+            }
         }
     }
 
