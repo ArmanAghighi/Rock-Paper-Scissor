@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hero_Name: Unknown
   hero_Sprite: {fileID: 21300000, guid: 71f5ea546172aa74b8db485953d922fc, type: 3}
+  inGameHero_Sprite: {fileID: 21300000, guid: 71f5ea546172aa74b8db485953d922fc, type: 3}
   hero_Catagory: 0
   CanDefeatEnemyList: 
   CanBeDefeatedByEnemyList: 

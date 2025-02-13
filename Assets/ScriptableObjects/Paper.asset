@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Paper
   m_EditorClassIdentifier: 
   hero_Name: Paper
-  hero_Sprite: {fileID: 1647537080, guid: 6a9ae278111514f4cbd630e516dbf5ce, type: 3}
-  hero_Catagory: 2
-  CanDefeatEnemyList: 01000000
-  CanBeDefeatedByEnemyList: 03000000
+  hero_Sprite: {fileID: 1551690413, guid: 4907b2f5d4e2c984fb67b2d01f536af2, type: 3}
+  inGameHero_Sprite: {fileID: 21300000, guid: b1994609612de784d9c8a300be4d0754, type: 3}
+  hero_Catagory: 8
+  CanDefeatEnemyList: 07000000060000000500000004000000030000000200000001000000
+  CanBeDefeatedByEnemyList: 090000000a0000000b0000000c0000000d0000000e0000000f000000

@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Scissor
   m_EditorClassIdentifier: 
   hero_Name: Scissor
-  hero_Sprite: {fileID: -166409136, guid: 7a8ea98df65c5b448b3bd261635e6b74, type: 3}
-  hero_Catagory: 3
-  CanDefeatEnemyList: 02000000
-  CanBeDefeatedByEnemyList: 01000000
+  hero_Sprite: {fileID: 2142876575, guid: 17ccbf75595b7494e8f986124d89578e, type: 3}
+  inGameHero_Sprite: {fileID: 21300000, guid: f1b78fa80fc92a348ada13b5cf194eae, type: 3}
+  hero_Catagory: 14
+  CanDefeatEnemyList: 0d0000000c0000000b0000000a000000090000000800000007000000
+  CanBeDefeatedByEnemyList: 0600000005000000040000000300000002000000010000000f000000

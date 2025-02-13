@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ee9f0971cf4f74469c6717a9d458c99, type: 3}
+  m_Name: Wolf
+  m_EditorClassIdentifier: 
+  hero_Name: Wolf
+  hero_Sprite: {fileID: 1724557790, guid: 7fcac53ddcd74db4b826ebf4f339ba54, type: 3}
+  inGameHero_Sprite: {fileID: 21300000, guid: a470b5b98c43b5b4cade15ee3bfedd70, type: 3}
+  hero_Catagory: 10
+  CanDefeatEnemyList: 09000000080000000700000006000000050000000400000003000000
+  CanBeDefeatedByEnemyList: 02000000010000000f0000000e0000000d0000000c0000000b000000

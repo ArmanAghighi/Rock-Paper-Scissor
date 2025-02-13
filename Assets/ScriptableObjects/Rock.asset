@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Rock
   m_EditorClassIdentifier: 
   hero_Name: Rock
-  hero_Sprite: {fileID: 130873301, guid: 04278c1c8f5694d45b9e0ccbb76fe1f5, type: 3}
+  hero_Sprite: {fileID: 1234988123, guid: dc5e0230186937f45b5b765e041bde9d, type: 3}
+  inGameHero_Sprite: {fileID: 21300000, guid: 85854e0c53b09cd499163376b4736e77, type: 3}
   hero_Catagory: 1
-  CanDefeatEnemyList: 03000000
-  CanBeDefeatedByEnemyList: 02000000
+  CanDefeatEnemyList: 0f0000000e0000000d0000000c0000000b0000000a00000009000000
+  CanBeDefeatedByEnemyList: 08000000070000000600000005000000040000000300000002000000
