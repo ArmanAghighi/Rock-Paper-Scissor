@@ -24,6 +24,6 @@ public class Opponent : MonoBehaviour
     private void SelectOpponentHero()
     {
         int randomIndex = Random.Range(0, opponentHeroTeam.Count);
-        opponentHero = opponentHeroTeam[2];
+        opponentHero = opponentHeroTeam[randomIndex];
     }
 }
